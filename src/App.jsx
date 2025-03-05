@@ -77,7 +77,7 @@ function App() {
                 name={t.twitter.name}
                 followers={t.twitter.followers}
                 followerChange={t.twitter.followerchange}
-                icon={t.twitter.icontwitter}
+                icon={t.twitter.icon}
                 leftGrad="hsl(203, 89%, 53%)"
                 rightGrad="hsl(203, 89%, 53%)"
               />
