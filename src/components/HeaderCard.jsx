@@ -17,7 +17,7 @@ const HeaderCard = ({ leftGrad, rightGrad, socialMedia, name,icon,followers,foll
   const barColor = {
     background: `linear-gradient(to right,${leftGrad},${rightGrad}`,
   };
-  let textColor = { color: followerChange < 0 ? "red" : "green" };
+  let textColor = { color: followerChange < 0 ? "hsl(356, 69%, 56%)" : "hsl(163, 72%, 41%)" };
   let upOrDown = followerChange < 0 ? "./images/icon-down.svg" : "./images/icon-up.svg";
   // console.log(name);
   return (

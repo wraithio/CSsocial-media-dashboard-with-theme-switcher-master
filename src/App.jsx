@@ -25,7 +25,7 @@ function App() {
   return (
     <div>
       {t == null ? (
-        <>no</>
+        <div className="text-5xl mt-12">fetch loading, please wait...</div>
       ) : (
         <div className="relative">
           <span className=" h-60 block w-sc dark:bg-[#1f212e]"></span>
