@@ -1,7 +1,4 @@
 #root {
-  max-width: 1580px;
-  margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 
@@ -87,4 +84,8 @@ input:checked + .button{
 
 input:checked + .button::before{
   transform: translateX(50px);
+}
+
+.dark-bg{
+  background-color: hsl(230, 17%, 14%);
 }
