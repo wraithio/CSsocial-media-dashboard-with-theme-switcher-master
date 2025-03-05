@@ -21,8 +21,10 @@ Requirements:
     Create an Endpoint that you can connect to bring back the Data shown in the figma 
 ---
 
-github [here](https://github.com/wraithio/advice-generator-app-main-2)
+github [here](https://github.com/wraithio/CSsocial-media-dashboard-with-theme-switcher-master/tree/main)
 
-vercel [here](https://advice-generator-app-main-2.vercel.app/)
+BACKEND github [here](https://github.com/wraithio/SocialDashBackEnd)
+
+vercel [here](https://c-ssocial-media-dashboard-with-theme-switcher-master.vercel.app/)
 
 peer review by :

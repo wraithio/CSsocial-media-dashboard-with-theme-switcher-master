@@ -1,8 +1,7 @@
 import { useState, useEffect } from "react";
 import "./App.css";
 import { HeaderCard } from "./components/HeaderCard";
-import OverviewLikesCard from "./components/OverviewLikesCard";
-import OverviewViewsCard from "./components/OverviewViewsCard";
+import OverviewCard from "./components/OverviewCard";
 import { fetchData } from "../services/dataservices";
 
 function App() {
@@ -105,60 +104,60 @@ function App() {
               Overview - Today
             </h1>
             <div className="grid lg:grid-rows-2 lg:grid-cols-4 sm:grid-rows-4 sm:grid-cols-2 grid-cols-1 grid-row-8 gap-8">
-              <OverviewViewsCard
+              <OverviewCard
                 socialMedia="facebook"
                 icon={t.facebook.icon}
-                views={t.facebook.views}
-                viewsChange={t.facebook.viewsChange}
+                count={t.facebook.views}
+                countChange={t.facebook.viewschange}
                 category="Page Views"
               />
-              <OverviewLikesCard
+              <OverviewCard
                 socialMedia="facebook"
                 icon={t.facebook.icon}
-                likes={t.facebook.likes}
-                likesChange={t.facebook.likesChange}
+                count={t.facebook.likes}
+                countChange={t.facebook.likeschange}
                 category="Likes"
               />
-              <OverviewLikesCard
+              <OverviewCard
                 socialMedia="instagram"
                 icon={t.instagram.icon}
-                likes={t.instagram.likes}
-                likesChange={t.instagram.likesChange}
+                count={t.instagram.likes}
+                countChange={t.instagram.likeschange}
                 category="Likes"
               />
-              <OverviewViewsCard
+              <OverviewCard
                 socialMedia="instagram"
                 icon={t.instagram.icon}
-                likes={t.instagram.likes}
-                likesChange={t.instagram.likesChange}
+                count={t.instagram.views}
+                countChange={t.instagram.viewschange}
                 category="Profile Views"
               />
-              <OverviewViewsCard
+              <OverviewCard
                 socialMedia="twitter"
                 icon={t.twitter.icon}
-                likes={t.twitter.likes}
-                likesChange={t.twitter.likesChange}
+                count={t.twitter.views}
+                countChange={t.twitter.viewschange}
                 category="Retweets"
               />
-              <OverviewLikesCard
+              <OverviewCard
                 socialMedia="twitter"
                 icon={t.twitter.icon}
-                likes={t.twitter.likes}
-                likesChange={t.twitter.likesChange}
+                count={t.twitter.likes}
+                countChange={t.twitter.likeschange}
                 category="Likes"
               />
-              <OverviewLikesCard
+              <OverviewCard
                 socialMedia="youtube"
                 icon={t.youtube.icon}
-                likes={t.youtube.likes}
-                likesChange={t.youtube.likesChange}
+                count={t.youtube.likes}
+                countChange={t.youtube.likeschange}
                 category="Likes"
               />
-              <OverviewViewsCard
+              <OverviewCard
                 socialMedia="youtube"
                 icon={t.youtube.icon}
-                likes={t.youtube.likes}
-                likesChange={t.youtube.likesChange}
+                count={t.youtube.views}
+                countChange={t.youtube.viewschange}
                 category="Total Views"
               />
             </div>
