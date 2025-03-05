@@ -4,12 +4,12 @@ import { fetchData } from "../../services/dataservices";
 const OverviewLikesCard = ({ socialMedia, category }) => {
   const [data, setData] = useState("");
 
-  useEffect(() => {
-    const asyncData = async () => {
-      setData(await fetchData(socialMedia));
-    };
-    asyncData();
-  }, []);
+  // useEffect(() => {
+  //   const asyncData = async () => {
+  //     setData(await fetchData(socialMedia));
+  //   };
+  //   asyncData();
+  // }, []);
 
   let textColor = { color: data.likeschange < 0 ? "red" : "green" };
   let upOrDown =

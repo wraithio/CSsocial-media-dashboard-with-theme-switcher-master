@@ -81,8 +81,10 @@ body{
 } */
 
 input:checked + .button{
-  background-color: #20096d;
+  background: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
 }
+
+
 input:checked + .button::before{
   transform: translateX(50px);
 }

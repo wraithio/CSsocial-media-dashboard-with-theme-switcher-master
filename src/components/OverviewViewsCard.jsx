@@ -4,12 +4,12 @@ import { fetchData } from "../../services/dataservices";
 const OverviewViewsCard = ({ socialMedia, category }) => {
   const [data, setData] = useState("");
 
-  useEffect(() => {
-    const asyncData = async () => {
-      setData(await fetchData(socialMedia));
-    };
-    asyncData();
-  }, []);
+  // useEffect(() => {
+  //   const asyncData = async () => {
+  //     setData(await fetchData(socialMedia));
+  //   };
+  //   asyncData();
+  // }, []);
 
   let textColor = { color: data.viewschange < 0 ? "red" : "green" };
   let upOrDown =

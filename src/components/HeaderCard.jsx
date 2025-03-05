@@ -6,12 +6,12 @@ import { fetchData } from "../../services/dataservices";
 const HeaderCard = ({leftGrad, rightGrad, socialMedia }) => {
   const [data, setData] = useState("");
 
-  useEffect(() => {
-    const asyncData = async () => {
-      setData(await fetchData(socialMedia));
-    };
-    asyncData();
-  }, []);
+  // useEffect(() => {
+  //   const asyncData = async () => {
+  //     setData(await fetchData(socialMedia));
+  //   };
+  //   asyncData();
+  // }, []);
 
   let audience = socialMedia === "youtube" ? "SUBSCRIBERS" : "FOLLOWERS";
   const barColor = {background: `linear-gradient(to right,${leftGrad},${rightGrad}`,};
