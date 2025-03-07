@@ -27,4 +27,6 @@ BACKEND github [here](https://github.com/wraithio/SocialDashBackEnd)
 
 vercel [here](https://c-ssocial-media-dashboard-with-theme-switcher-master.vercel.app/)
 
-peer review by :
+peer review by : Alexander Soria
+
+This is really well done. Not only do you have a perfect recreation of the site, but the transitions between screen sizes and hovering over icons gives life to a simple page. I did see that your dark toggle resets to light if you refresh the page, but I figured people just naturally had that problem too from what I heard. Really impressive that you also got data to draw from an endpoint, but I'm not sure if I see one for your overview - today stats? But other than that, your page looks really good and very accurate to the prototype! Nicely done!
