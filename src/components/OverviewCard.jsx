@@ -14,8 +14,8 @@ const OverviewCard = ({icon, count, countChange, socialMedia, category }) => {
         <img src={icon} alt={socialMedia} className="w-7 h-7" />
       </div>
       <div className="flex sm:justify-between sm:flex-row flex-col sm:px-8 sm:pb-8">
-        <h2 className="2xl:text-5xl lg:text-3xl sm:text-5xl text-xl font-bold dark:text-white">{count}</h2>
-        <div className="flex justify-center gap-2 place-items-center">
+        <h2 className="2xl:text-5xl lg:text-3xl sm:text-5xl text-3xl font-bold dark:text-white">{count}</h2>
+        <div className="flex justify-center gap-2 place-items-center sm:p-0 p-2">
           <div className="flex place-items-center">
             <img src={upOrDown} alt="increment symbol" className="h-2" />
           </div>

@@ -23,7 +23,7 @@ const HeaderCard = ({ leftGrad, rightGrad, socialMedia, name,icon,followers,foll
           </h3>
         </div>
         <h1 className="2xl:text-7xl lg:text-5xl sm:text-7xl text-4xl font-bold dark:text-white">{followers}</h1>
-        <h3 className="tracking-[.5em] text-gray-600 pt-3 dark:text-[#8b97c6]">{audience}</h3>
+        <h3 className="sm:tracking-[.5em] text-gray-600 pt-3 dark:text-[#8b97c6]">{audience}</h3>
         <div className="flex justify-center gap-2 sm:py-6 py-2">
           <div className="flex place-items-center">
             <img src={upOrDown} alt="increment symbol" className="h-2" />
