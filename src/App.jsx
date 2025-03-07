@@ -5,12 +5,10 @@ import OverviewCard from "./components/OverviewCard";
 import { fetchData } from "../services/dataservices";
 
 function App() {
-  let [darkMode, setDark] = useState("");
 
   const [t, setT] = useState(null);
 
   const toggleDark = () => {
-    setDark(darkMode);
     webpage.classList.toggle("dark");
     body.classList.toggle("dark-bg");
   };
@@ -25,12 +23,12 @@ function App() {
   return (
     <div>
       {t == null ? (
-        <div className="text-5xl mt-12">fetch loading, please wait...</div>
+        <div className="text-2xl mt-12">fetch loading, please wait...</div>
       ) : (
         <div className="relative">
           <span className=" h-60 block w-sc dark:bg-[#1f212e]"></span>
-          <div className="absolute w-full top-16 min-h-screen xl:px-40 px-10 lg:pb-0 pb-12 transition-all duration-500 ease-in-out">
-            <div className="flex mb-16">
+          <div className="absolute w-full top-16 min-h-screen xl:px-40 sm:px-10 px-2 lg:pb-0 pb-12 transition-all duration-500 ease-in-out">
+            <div className="flex sm:mb-16 mb-4">
               <div className="w-[50%]">
                 <h1 className="2xl:text-5xl text-4xl dark:text-white text-start font-bold">
                   Social Media Dashboard
@@ -39,7 +37,7 @@ function App() {
                   id="totalFollowers"
                   className="text-2xl pt-2 text-start font-bold text-gray-600"
                 >
-                  Total Followers: 23,004
+                  Total Followers: {t.totalFollowers}
                 </h3>
               </div>
               <div className="w-[50%] justify-end">
@@ -62,7 +60,7 @@ function App() {
               </div>
             </div>
 
-            <div className=" grid lg:grid-rows-1 lg:grid-cols-4 sm:grid-rows-2 sm:grid-cols-2  gap-8">
+            <div className=" grid lg:grid-rows-1 lg:grid-cols-4 grid-rows-2 grid-cols-2  sm:gap-8 gap-2">
               <HeaderCard
                 socialMedia="facebook"
                 name={t.facebook.name}
@@ -100,10 +98,10 @@ function App() {
                 rightGrad="hsl(348, 97%, 39%)"
               />
             </div>
-            <h1 className="text-3xl text-gray-600 font-bold text-start lg:mt-14 lg:mb-8 my-8">
+            <h1 className="text-3xl text-gray-600 font-bold text-start lg:mt-14 lg:mb-8 sm:my-8 my-4">
               Overview - Today
             </h1>
-            <div className="grid lg:grid-rows-2 lg:grid-cols-4 sm:grid-rows-4 sm:grid-cols-2 grid-cols-1 grid-row-8 gap-8">
+            <div className="grid lg:grid-rows-2 lg:grid-cols-4 sm:grid-rows-4 sm:grid-cols-2 grid-rows-2 grid-cols-4 sm:gap-8 gap-2">
               <OverviewCard
                 socialMedia="facebook"
                 icon={t.facebook.icon}
