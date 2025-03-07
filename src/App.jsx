@@ -7,10 +7,23 @@ import { fetchData } from "../services/dataservices";
 function App() {
 
   const [t, setT] = useState(null);
+  const [checkBox, setCheckBox] = useState("off");
+  webpage.classList.add(localStorage.getItem("DashTheme",0))
+  body.className = localStorage.getItem("DashTheme") == "dark" ? "dark-bg" : "";
 
   const toggleDark = () => {
-    webpage.classList.toggle("dark");
-    body.classList.toggle("dark-bg");
+    if (webpage.className == "dark")
+    {
+    webpage.className = "light"
+    body.classList.remove("dark-bg");
+    localStorage.setItem("DashTheme","light")
+  }
+  else{
+    webpage.className = "dark"
+    body.classList.add("dark-bg");
+    localStorage.setItem("DashTheme","dark")
+  }
+  console.log(localStorage.getItem("DashTheme",0))
   };
 
   useEffect(() => {
@@ -45,7 +58,6 @@ function App() {
                   <h3 className="me-3 text-xl dark:text-white text-gray-600">
                     Dark Mode
                   </h3>
-
                   <input
                     onClick={toggleDark}
                     type="checkbox"

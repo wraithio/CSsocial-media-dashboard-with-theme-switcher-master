@@ -9,7 +9,7 @@ With the assets given to you remake the following project Social Media Dashboard
 
 
 Requirements:
-
+    
     Built in React 
     Must have a component folder ( App cannot be built in the app.js or in the index.js)
     Mobile and Desktop versions must be built out
