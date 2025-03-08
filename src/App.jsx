@@ -5,25 +5,25 @@ import OverviewCard from "./components/OverviewCard";
 import { fetchData } from "../services/dataservices";
 
 function App() {
-
   const [t, setT] = useState(null);
-  const [checkBox, setCheckBox] = useState("off");
-  webpage.classList.add(localStorage.getItem("DashTheme",0))
+  webpage.classList.add(localStorage.getItem("DashTheme", 0));
   body.className = localStorage.getItem("DashTheme") == "dark" ? "dark-bg" : "";
-
+  
   const toggleDark = () => {
-    if (webpage.className == "dark")
-    {
-    webpage.className = "light"
-    body.classList.remove("dark-bg");
-    localStorage.setItem("DashTheme","light")
-  }
-  else{
-    webpage.className = "dark"
-    body.classList.add("dark-bg");
-    localStorage.setItem("DashTheme","dark")
-  }
-  console.log(localStorage.getItem("DashTheme",0))
+    // if (check != undefined) {
+    //   check.checked =
+    //     localStorage.getItem("DashTheme", 0) == "dark" ? true : false;
+    // }
+    if (webpage.className == "dark") {
+      webpage.className = "light";
+      body.classList.remove("dark-bg");
+      localStorage.setItem("DashTheme", "light");
+    } else {
+      webpage.className = "dark";
+      body.classList.add("dark-bg");
+      localStorage.setItem("DashTheme", "dark");
+    }
+    console.log(localStorage.getItem("DashTheme", 0));
   };
 
   useEffect(() => {
