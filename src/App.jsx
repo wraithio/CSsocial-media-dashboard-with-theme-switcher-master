@@ -6,6 +6,7 @@ import { fetchData } from "../services/dataservices";
 
 function App() {
   const [t, setT] = useState(null);
+  const [checkBox, setChecked] = useState();
   webpage.classList.add(localStorage.getItem("DashTheme", 0));
   body.className = localStorage.getItem("DashTheme") == "dark" ? "dark-bg" : "";
   
@@ -15,6 +16,7 @@ function App() {
     //     localStorage.getItem("DashTheme", 0) == "dark" ? true : false;
     // }
     if (webpage.className == "dark") {
+
       webpage.className = "light";
       body.classList.remove("dark-bg");
       localStorage.setItem("DashTheme", "light");
